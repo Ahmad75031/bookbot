@@ -4,6 +4,8 @@ def main():
     words = text.split()
     character_count = count_each_letter(words)
     sorted_character_count = sorted_list(character_count)
+    print("-- Begin report --")
+    print(f"Number of words {number_of_words(words)}")
     for item in sorted_character_count:
         print(f"The '{item['ch']}' characker was found {item['num']} times")
     print("--- End report ---")
